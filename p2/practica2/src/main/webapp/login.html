@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <mi-menu></mi-menu>
+    <div class="bubbles-container">
+    <div class="login-container">
+
+      
+        <h2 class="titulos">Iniciar sesión</h2>
+        <form action="LoginServlet" method="POST">
+            <input type="text" name="usuario" placeholder="Usuario" required>
+            <input type="password" name="clave" placeholder="Contraseña" required>
+            <input type="hidden" name="url" value="usuario.html">
+            <input type="submit" value="Entrar" class="btn bg-yellow text-black">
+            <p class="text-center">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+        </form>
+    </div>
+    </div>
+    <mi-pie></mi-pie>
+    <script src="https://kit.fontawesome.com/b94f3ebffd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mis-etiquetas.js"></script>
+</body>
+</html>

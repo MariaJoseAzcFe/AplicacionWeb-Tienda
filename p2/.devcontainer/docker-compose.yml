@@ -1,0 +1,35 @@
+services:
+  apache:
+    container_name: ${APACHE_NAME}
+    build:
+      context: apache
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./web:/var/www/html
+  tomcat:
+    build:
+      context: tomcat
+      dockerfile: Dockerfile
+    container_name: tomcat
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../practica2:/practica2
+    environment:
+      - JPDA_ADDRESS=*:8000
+      - JPDA_TRANSPORT=dt_socket
+      - JAVA_OPTS=-Xms512m -Xmx1024m
+    restart: unless-stopped
+
+  mariadb:
+    image: mariadb:11.8.6 
+    container_name: ${MARIADB_NAME}
+    ports:
+      - 3306:3306
+    environment:
+      - MARIADB_ROOT_PASSWORD=${MARIADB_PASSWORD}
+    volumes:
+      - ./mariadb:/var/lib/mysql:Z

@@ -1,0 +1,152 @@
+
+body {
+    background-color: #f8f9fa; 
+}
+@font-face{
+    font-family:"Myfont";
+    src: url("../fonts/PixelatedPusab.ttf")format("truetype");
+}
+
+.admin-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    min-height: 60vh; 
+}
+.navbar.bg-dark {
+    background-color: #38afff !important; 
+}
+
+.navbar.bg-dark .navbar-brand, 
+.navbar.bg-dark .nav-link {
+    color: #000000 !important;
+    font-family: "Myfont", sans-serif;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar.bg-dark .nav-link:hover,
+.navbar.bg-dark .navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+
+h2, .modal-title {
+    font-family: "Myfont", sans-serif;
+    color: #000000;
+}
+
+
+.card {
+    background-color: rgb(227, 238, 241);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .form-label {
+    font-family: "Myfont", sans-serif;
+    font-size: 18px;
+}
+
+
+.table-dark th {
+    background-color: #38afff !important;
+    color: #000000 !important;
+    font-family: "Myfont", sans-serif;
+    font-size: 18px;
+    border-color: #1e90ff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgb(227, 238, 241) !important; 
+}
+
+.table {
+    vertical-align: middle;
+}
+
+.btn {
+    font-family: "Myfont", sans-serif !important;
+    border: none;
+    color: #000000 !important; 
+}
+
+
+.btn-primary, .btn-info {
+    background-color: #38afff !important;
+}
+.btn-primary:hover, .btn-info:hover {
+    background-color: #1e90ff !important;
+    color: #ffffff !important;
+}
+
+
+.btn-success {
+    background-color: #f6f85d !important;
+}
+.btn-success:hover {
+    background-color: #dbcd48 !important;
+}
+
+
+.btn-warning {
+    background-color: #ffa41c !important;
+}
+.btn-warning:hover {
+    background-color: #ff8c00 !important;
+}
+
+
+.btn-danger {
+    background-color: #ff4d4d !important;
+    color: #ffffff !important;
+}
+.btn-danger:hover {
+    background-color: #e60000 !important;
+}
+.table-dark th {
+    background-color: #38afff !important;
+    color: #000000 !important;
+    font-family: "Myfont", sans-serif;
+    font-size: 18px;
+    border-color: #1e90ff;
+    
+  
+    font-weight: normal !important; 
+}
+
+footer {
+    background-color: #38afff; 
+    color: #000000;
+    padding: 10px 20px; 
+    margin-top: auto; 
+    border-top: 2px solid #000000; 
+    font-family: "Myfont", sans-serif;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px;
+}
+
+footer a {
+    color: #000000;
+    font-size: 24px; 
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p#copyright {
+    margin: 0; 
+    font-size: 14px;
+}
+.img-producto {
+    width: 100px;
+    height: auto;
+}

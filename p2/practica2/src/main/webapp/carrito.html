@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <mi-menu></mi-menu>
+    <div class="container d-flex flex-column flex-grow-2 py-3">
+    <h2 class="titulos">Mi Carrito</h2>
+    <div class="bubbles-container">
+    <div class="container">
+  
+      <div id="contenedor-carrito" class="productos mb-5"></div>
+      <input type="button"  class="btn bg-blue text-white btn-primary" value="Vaciar Carrito" onclick='eliminarCarrito()'>
+    </div>
+    </div>
+    </div>
+     
+    <div class="resumen">
+        <p class="precio">Subtotal (<span id="cantidad-productos">0</span> productos): 
+           <span id="subtotal">0.00€</span>
+        </p>
+        <p class="precio">Envío: <span id="envio">5.00€</span></p>
+        <p class="precioc">Total: <span id="total-pagar">0.00€</span></p>
+        
+          <a href="#" onclick="EnviarCarrito('ProcesarPedidoServlet',carrito)" class="btn bg-yellow text-black">Proceder al Pago</a>
+    </div>
+    <mi-pie></mi-pie>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mis-etiquetas.js"></script>
+    <script src="https://kit.fontawesome.com/b94f3ebffd.js" crossorigin="anonymous"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/libjson.js"></script>
+    <script>
+      mostrarCarrito("contenedor-carrito");
+    </script>
+</body>
+</html>

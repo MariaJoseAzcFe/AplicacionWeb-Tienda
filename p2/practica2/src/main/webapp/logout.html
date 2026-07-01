@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <mi-menu></mi-menu>
+    <div class="login-container">
+
+        <!-- Formulario para cerrar sesión -->
+        <form action="Servletlogout" method="POST" class="d-inline">
+            <input type="hidden" name="url" value="loginUsuario.jsp"> 
+            <button type="submit" class="btn bg-red text-white">Cerrar sesión</button>
+        </form>
+
+    </div>
+    <mi-pie></mi-pie>
+    <script src="https://kit.fontawesome.com/b94f3ebffd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mis-etiquetas.js"></script>
+</body>
+</html>

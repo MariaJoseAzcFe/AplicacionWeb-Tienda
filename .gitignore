@@ -1,0 +1,21 @@
+
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Artefactos de Compilación (Maven/Gradle) ---
+target/
+build/
+bin/
+**/*.class
+**/*.jar
+**/*.war
+**/*.ear
+**/*.rar
+**/*.class
+
+# VS Code
+.vscode/
+

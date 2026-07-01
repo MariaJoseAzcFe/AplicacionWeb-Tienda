@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Productos</title>
+</head>
+<body>
+    <mi-menu></mi-menu>
+    <div class = "bubbles-container">
+    <div class=" container d-flex flex-column flex-grow-2 py-3">
+        <h3 class="titulos">Productos</h3>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/zenitsu.jpg" alt="Zenitsu">
+                  <h3 class="titulo-productos">Zenitsu</h3>
+                  <p>Zenitsu Agatsuma, personaje del anime Kimetsu no Yaiba.</p>
+                  <p class="precio">25€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-yellow text-black p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/broly.jpg" alt="Broly">
+                  <h3 class="titulo-productos">Broly</h3>
+                  <p>Broly, personaje del anime Dragon Ball Z.</p>
+                  <p class="precio">20€</p>
+                  <button class="btn bg-blue text-white btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/venom.jpg" alt="Venom">
+                  <h3 class="titulo-productos">Venom</h3>
+                  <p>Venom, personaje de Marvel Comics.</p>
+                  <p class="precio">40€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="img/spiderman.jpg" alt="Spiderman">
+                  <h3 class="titulo-productos">Spiderman</h3>
+                  <p>Spiderman, personaje de Marvel Comics.</p>
+                  <p class="precio">15€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-yellow text-black p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/sonic.jpg" alt="Sonic">
+                  <h3 class="titulo-productos">Sonic</h3>
+                  <p>Sonic, personaje de videojuegos SEGA.</p>
+                  <p class="precio">20€</p>
+                  <button class="btn bg-blue text-white btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/samira.jpg" alt="samira">
+                  <h3 class="titulo-productos">Samira</h3>
+                  <p>Samira, personaje de League of Legends.</p>
+                  <p class="precio">20€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-3">
+            <ul class="pagination">
+              <li class="page-item paginacion"><a class="page-link" href="productos.html">Anterior</a></li>
+              <li class="page-item paginacion active"><a class="page-link" href="productos.html">1</a></li>
+              <li class="page-item paginacion"><a class="page-link" href="productos2.html">2</a></li>
+              <li class="page-item paginacion"><a class="page-link" href="productos3.html">3</a></li>
+              <li class="page-item paginacion"><a class="page-link" href="productos2.html">Siguiente</a></li>
+            </ul>
+          </div>
+      
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+             
+            
+                <div class="modal-body">
+                  Añadido con éxito.
+                </div>
+             
+                <div class="modal-footer">
+                  <button type="button" class="btn text-black btn-success" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <mi-pie></mi-pie>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mis-etiquetas.js"></script>
+    <script src="https://kit.fontawesome.com/b94f3ebffd.js" crossorigin="anonymous"></script>
+</body>
+</html>

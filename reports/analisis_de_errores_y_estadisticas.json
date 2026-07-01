@@ -1,0 +1,12 @@
+{
+    "errors-p2": {
+        "repository_structure_validation": [
+            "Carpeta no encontrada: /tmp/repositories/PROH_2026_L3_P6/p2/practica2/src/main/webapp/WEB-INF/lib"
+        ],
+        "maven-compilation": {
+            "jsps-errors": [],
+            "java-errors": []
+        }
+    },
+    "errors-p3": {}
+}

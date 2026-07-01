@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <mi-menu></mi-menu>
+    <div class="bubbles-container container d-flex flex-column flex-grow-2 py-3">
+        <h2 class="titulos">Mi Carrito</h2>
+        <div class="container">
+            
+            <!-- Sección de productos -->
+            <div class="productos">
+                <h1>Tu Carrito de Compras</h1>
+                <div class="productocompra">
+                    <img class="imagencompra" src="img/zenitsu.jpg" alt="Zenitsu">
+                    <div class="detalles">
+                        <h2>Zenitsu</h2>
+                        <p>Impresión Zenitsu tamaño A3.</p>
+                        <p class="preciop">25.00€</p>
+                        <div class="acciones">
+                            <label for="cantidad1">Cantidad:</label>
+                            <input type="number" class="cantidad" id="cantidad1" min="1" value="1">
+                            <button class="btn-eliminar text-black btn-yellow">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productocompra">
+                    <img class="imagencompra" src="img/venom.jpg" alt="Venom">
+                    <div class="detalles">
+                        <h2>Venom</h2>
+                        <p>Impresión Venom tamaño A3.</p>
+                        <p class="preciop">35.00€</p>
+                        <div class="acciones">
+                            <label for="cantidad2">Cantidad:</label>
+                            <input type="number" class="cantidad" id="cantidad2" min="1" value="1">
+                            <button class="btn-eliminar text-black btn-yellow">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="resumen">
+                <h2>Resumen de la Compra</h2>
+                <div class="total">
+                    <p>Subtotal (2 productos): <span>60.00€</span></p>
+                    <p>Envío: <span>5.00€</span></p>
+                    <p>Total: <span class="total-pagar">65.00€</span></p>
+                </div>
+                <button class="btn-pagar btn-yellow" onclick="window.location.href='login2.html';">Proceder al Pago</button><!--La única manera que me ha dejado redirigir con el boton-->
+            </div>
+        </div>
+    </div>
+    <mi-pie></mi-pie>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mis-etiquetas.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="https://kit.fontawesome.com/b94f3ebffd.js" crossorigin="anonymous"></script>
+</body>
+</html>

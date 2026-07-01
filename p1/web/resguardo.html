@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Resumen Pedido</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <mi-menu></mi-menu>
+
+  <div class="bubbles-container flex-grow-1 py-5">
+    <main class="container">
+      
+      <div class="text-center mb-5">
+        <i class="fa-solid fa-circle-check text-success mb-3" ></i>
+        <h2 class="titulos">¡Pedido realizado con éxito!</h2>
+        <p class="text-muted fs-5">Gracias por tu compra. Aquí tienes el resumen de tu pedido.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch mb-5">
+        
+        <div class="col-12 col-lg-5 d-flex flex-column">
+          <div class="card shadow-sm border-0 rounded-4 flex-grow-1 bg-white">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="h5 border-bottom pb-3 mb-4 fw-bold">
+                <i class="fa-solid fa-user-check me-2 text-primary"></i>Datos del Cliente
+                <span class="d-block text-muted fw-normal fs-6 mt-1">(Pedido #12345)</span>
+              </h3>
+              
+              <div class="table-responsive">
+                <table class="table table-borderless table-sm mb-0">
+                  <tbody>
+                    <tr><th scope="row" class="text-muted fw-normal align-middle">Nombre:</th><td class="fw-bold align-middle">Mariajo Lopez Gomez</td></tr>
+                    <tr><th scope="row" class="text-muted fw-normal align-middle">Dirección:</th><td class="fw-bold align-middle">Plaza Mayor, 123<br>(46950)</td></tr>
+                    <tr><th scope="row" class="text-muted fw-normal align-middle pt-3">Forma de Pago:</th><td class="fw-bold pt-3"><i class="fa-solid fa-credit-card me-2 text-success fs-5"></i> Tarjeta de Crédito</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7 d-flex flex-column">
+          <div class="card shadow-sm border-0 rounded-4 flex-grow-1 bg-white">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="h5 border-bottom pb-3 mb-4 fw-bold">
+                <i class="fa-solid fa-box-open me-2 text-warning"></i>Detalle de los Productos
+              </h3>
+              
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Producto</th>
+                      <th class="text-center">Cantidad</th>
+                      <th class="text-end">Precio Unitario</th>
+                      <th class="text-end">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fw-bold">Zenitsu</td>
+                      <td class="text-center">2</td>
+                      <td class="text-end text-muted">25.00 €</td>
+                      <td class="text-end fw-bold">50.00 €</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Venom</td>
+                      <td class="text-center">1</td>
+                      <td class="text-end text-muted">35.00 €</td>
+                      <td class="text-end fw-bold">35.00 €</td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="table-group-divider">
+                    <tr>
+                      <td colspan="3" class="text-end fw-bold fs-5 pt-4">Total pagado:</td>
+                      <td class="text-end fw-bold fs-5 text-success pt-4">85.00 €</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="text-center">
+        <a href="index.html" class="btn btn-primary rounded-pill px-5 py-2 fw-bold">
+          <i class="fas fa-home me-2"></i>Volver al Inicio
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+  <mi-pie class="mt-auto"></mi-pie>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/mis-etiquetas.js"></script>
+  <script src="https://kit.fontawesome.com/b94f3ebffd.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+    "name": "Entorno practica2",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "tomcat",
+    "workspaceFolder": "/practica2",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ritwickdey.liveserver",
+                "celianriboulet.webvalidator",
+                "fgmnts.w3c-offline-html-validator",
+                "cweijan.vscode-mysql-client2",
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-maven",
+                "redhat.vscode-community-server-connector", 
+                "j0hnmilt0n.vscode-jsp-clone",
+                "xdebug.php-pack",
+                "xdebug.php-debug",
+                "xdebug.php-debug",
+                "xdebug.php-debug",
+                "ms-azuretools.vscode-containers"
+            ]
+        }
+    },
+    "forwardPorts": [8080,5500,3000]
+}

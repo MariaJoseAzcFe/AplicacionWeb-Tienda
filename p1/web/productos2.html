@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Productos</title>
+</head>
+<body>
+    <mi-menu></mi-menu>
+    <div class = "bubbles-container">
+    <div class="container d-flex flex-column flex-grow-2 py-3">
+        <h3 class="titulos">Productos</h3>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/oliviajpg.jpg" alt="oliviajpg">
+                  <h3 class="titulo-productos">Olivia Rodrigo</h3>
+                  <p>Olivia Rodrigo, cantante norteamericana.</p>
+                  <p class="precio">25€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Reservar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-yellow text-black p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/pennywise.jpg" alt="pennywise">
+                  <h3 class="titulo-productos">Pennywise</h3>
+                  <p>Pennywise, personaje de terror.</p>
+                  <p class="precio">30€</p>
+                  <button class="btn bg-blue text-white btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Reservar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/eddie.jpg" alt="eddie">
+                  <h3 class="titulo-productos">Eddie Munson</h3>
+                  <p>Eddie Munson, personaje de Stranger Things.</p>
+                  <p class="precio">30€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Reservar</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/yuta.jpg" alt="yuta">
+                  <h3 class="titulo-productos">Yuta</h3>
+                  <p>Yuta Okkotsu, personaje del anime Jujutsu Kaisen.</p>
+                  <p class="precio">25€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Reservar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-yellow text-black p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/tigre.jpg" alt="tigre">
+                  <h3 class="titulo-productos">Tigre</h3>
+                  <p>Tigre, animal en peligro de extinción.</p>
+                  <p class="precio">20€</p>
+                  <button class="btn bg-blue text-white btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Reservar</button>
+                </div>
+              </div>
+              <div class="col-sm bg-primary text-white p-3 efecto-pompa">
+                <div class="producto d-flex flex-column h-100">
+                  <img class="imagenproducto" src="./img/zoro.jpg" alt="zoro">
+                  <h3 class="titulo-productos">Zoro</h3>
+                  <p>Zoro, personaje del anime One Piece.</p>
+                  <p class="precio">20€</p>
+                  <button class="btn text-black btn-yellow mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Reservar</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="container mt-3">
+            <ul class="pagination">
+              <li class="page-item paginacion"><a class="page-link" href="productos.html">Anterior</a></li>
+              <li class="page-item paginacion"><a class="page-link" href="productos.html">1</a></li>
+              <li class="page-item paginacion active"><a class="page-link" href="productos2.html">2</a></li>
+              <li class="page-item paginacion"><a class="page-link" href="productos3.html">3</a></li>
+              <li class="page-item paginacion"><a class="page-link" href="productos3.html">Siguiente</a></li>
+            </ul>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+             
+                <!-- Cuerpo del Modal -->
+                <div class="modal-body">
+                  Añadido con éxito.
+                </div>
+                <!-- Pie del Modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn text-black btn-success" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <mi-pie></mi-pie>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mis-etiquetas.js"></script>
+    <script src="https://kit.fontawesome.com/b94f3ebffd.js" crossorigin="anonymous"></script>
+</body>
+</html>
