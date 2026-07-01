@@ -18,6 +18,8 @@ Tecnologías utilizadas:
   - JavaScript
   - PHP
   - Docker
+  - Maven
+  - Tomcat
 
 El repositorio se estructura en tres carpetas, una para cada práctica:
 
@@ -49,6 +51,8 @@ Technologies used:
   - JavaScript
   - PHP
   - Docker
+  - Maven
+  - Tomcat
 
 The repository is structured in three folders, one for each practice:  
 
